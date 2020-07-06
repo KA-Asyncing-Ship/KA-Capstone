@@ -12,14 +12,14 @@ import Login from "./Login/Login";
 function App() {
   return (
     <div className="App">
-      <TopMenu />
+      {/* <TopMenu /> */}
       {/* <Login /> */}
-      <Splash />
+      {/* <Splash /> */}
       {/* <Landing /> */}
       {/* <BudgetSetup /> */}
-      {/* <GoalModal /> */}
+      <GoalModal />
       {/* <BudgetOverview /> */}
-      <BottomMenu />
+      {/* <BottomMenu /> */}
     </div>
   );
 }

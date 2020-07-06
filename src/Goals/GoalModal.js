@@ -1,5 +1,6 @@
 import React, { useState, Component } from 'react';
 import Modal from 'react-modal'
+import SimpleMenu from '../Menu/TopMenu'
 import './GoalModal.scss'
 import {
     withRouter,
@@ -12,8 +13,8 @@ function NewGoal() {
     return (
         <>
             <div className='header'>
-                <h1> Your Savings </h1>
-                <img onClick={() => setModalIsOpen(true)} src="https://img.icons8.com/ios/50/000000/add.png" />
+                <SimpleMenu />
+                <img className='modalBtn' onClick={() => setModalIsOpen(true)} src="https://img.icons8.com/ios/50/000000/add.png" />
             </div>
 
             <div className='emptyStaticScreen'>
@@ -30,17 +31,17 @@ function NewGoal() {
                     <form className='goalForm' id='goalForm'>
                         <div className='newGoalName'>
                             <label className='label' htmlFor='goalName'> Goal Name: </label> <br />
-                            <input type='text' name='goalName' className='goalName input' />
+                            <input type='text' name='goalName' className='goalName inputs' />
                         </div>
 
                         <div className='newGoalAmount'>
                             <label className='label' htmlFor='goalAmount'> Goal Amount: </label> <br />
-                            <input type='number' name='goalAmount' className='goalAmount input' min='0.00' step='0.01' />
+                            <input type='number' name='goalAmount' className='goalAmount inputs' min='0.00' step='0.01' />
                         </div>
 
                         <div className='NewDepositFrequency'>
                             <label className='label' htmlFor='depositFrequency'> Deposit Frequency: </label> <br />
-                            <select className='depositFrequency input' name='depositFrequency' form='goalForm'>
+                            <select className='inputs deposit' name='depositFrequency' form='goalForm'>
                                 <option value='weekly'> Weekly </option>
                                 <option value='bi-weekly'> Bi-Weekly </option>
                                 <option value='monthly'> Monthly </option>
@@ -49,10 +50,9 @@ function NewGoal() {
 
                         <div className='NewDepositAmount'>
                             <label className='label' htmlFor='depositAmount'> Deposit Amount: </label> <br />
-                            <input type='number' name='goalAmount' className='depositAmount input' min='0.00' step='0.01' />
+                            <input type='number' name='goalAmount' className='depositAmount inputs' min='0.00' step='0.01' />
                         </div>
 
-                        {/* <input type="submit" value="Save Goal" className='saveGoal' /> */}
                     </form>
 
                     <div className='submitBtn'>
