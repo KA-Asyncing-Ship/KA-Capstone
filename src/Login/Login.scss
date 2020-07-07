@@ -3,22 +3,11 @@
   padding: 0;
 }
 
-.rectangle {
-  background-color: #fcfc58c5;
-  width: 100vw;
-  height: 4em;
-  text-align: center;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  margin-bottom: 10em;
-  h1 {
-    color: rgb(61, 61, 61);
-  }
-}
 
 .form {
   width: min-content;
   margin: 0 auto;
+  margin-top: 8em;
   .loginForm {
     .username,
     .password,
@@ -42,8 +31,9 @@
       font-size: 18px;
     }
     .submit {
-      margin: 1em;
-      margin-left: 4em;
+      margin: 0 auto;
+      margin-top: 4em;
+      width: 12em;
       box-shadow: 0px 10px 14px -7px #276873;
       padding: 0.7em 1.5em;
       text-decoration: none;

@@ -8,16 +8,18 @@ import BudgetSetup from "./Budget/BudgetSetup";
 import BudgetOverview from "./Budget/BudgetOverview";
 import GoalModal from "./Goals/GoalModal";
 import Login from "./Login/Login";
+import Details from './Goals/GoalsDetail'
 
 function App() {
   return (
     <div className="App">
       <TopMenu />
       {/* <Login /> */}
-      <Splash />
+      {/* <Splash /> */}
       {/* <Landing /> */}
       {/* <BudgetSetup /> */}
       {/* <GoalModal /> */}
+      <Details />
       {/* <BudgetOverview /> */}
       <BottomMenu />
     </div>

@@ -10,10 +10,6 @@ class Details extends Component {
     render() {
         return (
             <>
-                <div className='header'>
-                    <h1> Your Savings </h1>
-                </div>
-
                 <div className='goal'>
                     <div className='hexagon'>
                         <svg width="61" height="70" viewBox="0 0 81 90" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,12 +17,13 @@ class Details extends Component {
                         </svg>
                     </div>
 
-                    <div className='progress'>
+                    <div className='progressBar'>
                         <h3 className='goalName'> Goal Name </h3>
                         <Progress
                             percent={0}
                         />
                     </div>
+
                 </div>
 
                 <div className='goalFooter'>
@@ -41,10 +38,6 @@ class Details extends Component {
                     <div className='img'>
                         <img className='bankIcon' src="https://img.icons8.com/dusk/64/000000/money-box.png" />
                     </div>
-                </div>
-
-                <div className='footer'>
-
                 </div>
             </>
         )

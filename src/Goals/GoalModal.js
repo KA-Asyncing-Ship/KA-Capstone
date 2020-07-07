@@ -11,11 +11,7 @@ function NewGoal() {
     const [modalIsOpen, setModalIsOpen] = useState(false)
     return (
         <>
-            <div className='header'>
-                <h1> Your Savings </h1>
-                <img onClick={() => setModalIsOpen(true)} src="https://img.icons8.com/ios/50/000000/add.png" />
-            </div>
-
+            <img className='plus' onClick={() => setModalIsOpen(true)} src="https://img.icons8.com/ios/50/000000/add.png" />
             <div className='emptyStaticScreen'>
                 <p>You have not created any savings goals yet, click the plus button to get started on your first goal!</p>
                 <img src="https://img.icons8.com/ios/100/000000/sad-cloud.png" />

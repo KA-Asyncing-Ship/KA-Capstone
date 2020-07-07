@@ -3,32 +3,25 @@
     padding: 0;
 }
 
-.header {
-    background-color: #fcfc58c5;
-    width: 100vw;
-    height: 4em;
-    padding-top: 1.5em;
-    padding-bottom: .5em;
-    margin-bottom: 5em;
-    text-align: center;
-}
-
 .goal {
+    margin-top: 8em;
     margin-left: 2em;
     display: flex;
     flex-direction: row;
-    text-align: center;
     margin-bottom: 1em;
        .hexagon {
            margin-right: 1em;
            margin-top: .5em;
        }
-       .progress {
+       .progressBar {
           margin-top: 1em;
           width: 15em;
+          h3 {
+              margin-left: 3em;
+          }
        }
        .react-sweet-progress {
-           margin-top: .5em;
+           margin-top: 1em;
        }
 }
 
