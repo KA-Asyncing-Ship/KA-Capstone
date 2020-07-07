@@ -42,6 +42,11 @@
         }
         
 }
+
+.addedGoals {
+    margin-top: 10em;
+}
+
 .modal {
     height: 28em;
     background-color: rgb(252, 252, 252);
@@ -61,14 +66,21 @@
         .label {}
         .input {
             border-radius: 20px;
-            margin-bottom: 2em;
+            margin-bottom: 1.5em;
             margin-top: 1em;
             width: 15em;
-            height: 2em;
+            height: .5em;
             border: 1px solid grey;
             padding-left: 1em;
         }
         .depositFrequency {
+            height: 2.7em;
+            width: 18em;
+            border-radius: 20px;
+            margin-bottom: 2em;
+            margin-top: 1em;
+            border: 1px solid grey;
+            padding-left: 1em;
         }
     } 
     .submitBtn {
